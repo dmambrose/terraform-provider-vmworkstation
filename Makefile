@@ -1,13 +1,13 @@
 SHELL = /bin/bash
-
+OS_ARCH=windows/amd64
 PREFIX = terraform-provider
 NAME = vmworkstation
 VERSION = 0.2.2
 # https://semver.org/
-OS = linux
+OS = windows
 ARCH = amd64
 SIGNFILES = publish_files/
-BINARY = $(PREFIX)-$(NAME)_v$(VERSION)
+BINARY = $(PREFIX)-$(NAME)_v$(VERSION).exe
 ZIPFILE = $(PREFIX)-$(NAME)_$(VERSION)_$(OS)_$(ARCH).zip
 SHAFILE = $(PREFIX)-$(NAME)_$(VERSION)_SHA256SUMS
 
